@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJJ0JL61J0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FJJ0JL61J0');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TempDiary | Digital Food Hygiene & SFBB Fridge Temp Logging</title>
@@ -61,7 +71,6 @@
   <main>
     <!-- Hero Section -->
     <section class="max-w-5xl mx-auto px-6 pt-12 pb-20 text-center relative overflow-hidden">
-      <!-- Glow Accent -->
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-xs font-semibold mb-6 shadow-sm">
@@ -108,7 +117,6 @@
         <div class="bg-gradient-to-b from-slate-800 to-slate-900 p-2 rounded-[2.5rem] shadow-2xl border border-slate-800">
           <div class="bg-slate-950 rounded-[2rem] p-4 text-left border border-slate-800/80 space-y-4">
             
-            <!-- Mock Header -->
             <div class="flex items-center justify-between border-b border-slate-800 pb-3">
               <div class="flex items-center gap-2">
                 <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
@@ -122,7 +130,6 @@
               <span class="text-[10px] bg-emerald-500/10 text-emerald-400 font-mono px-2 py-0.5 rounded-full border border-emerald-500/20">Active</span>
             </div>
 
-            <!-- Mock Opening Checks -->
             <div class="grid grid-cols-2 gap-2">
               <div class="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-between">
                 <span class="text-[11px] font-bold text-emerald-300">Opening</span>
@@ -134,7 +141,6 @@
               </div>
             </div>
 
-            <!-- Mock Unit Logs -->
             <div class="space-y-2">
               <div class="p-3 bg-slate-900 border border-emerald-500/30 rounded-xl flex items-center justify-between">
                 <div>
@@ -161,7 +167,6 @@
               </div>
             </div>
 
-            <!-- Mock Download Button -->
             <div class="pt-1">
               <div class="w-full py-2.5 px-3 bg-slate-900 border border-slate-800 text-slate-300 font-semibold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-sm">
                 <i data-lucide="file-text" class="w-3.5 h-3.5 text-emerald-400"></i>
@@ -182,7 +187,6 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <!-- The Old Way -->
         <div class="p-6 rounded-3xl bg-slate-900/50 border border-slate-800/80 space-y-4">
           <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center">
             <i data-lucide="x-circle" class="w-5 h-5"></i>
@@ -208,7 +212,6 @@
           </ul>
         </div>
 
-        <!-- The TempDiary Way -->
         <div class="p-6 rounded-3xl bg-slate-900 border border-emerald-500/30 space-y-4 relative shadow-xl shadow-emerald-950/20">
           <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
             <i data-lucide="check-circle" class="w-5 h-5"></i>
@@ -325,22 +328,41 @@
     </section>
   </main>
 
+  <!-- Footer with Privacy Policy Trigger -->
+  <footer class="border-t border-slate-900 py-10 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-400 font-semibold">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+        <span>TempDiary UK</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <button type="button" onclick="openPrivacyModal()" class="hover:text-emerald-400 transition underline">
+          Privacy Policy
+        </button>
+        <a href="mailto:support@tempdiary.co.uk" class="hover:text-emerald-400 transition underline">
+          Contact Support
+        </a>
+      </div>
+
+      <p class="text-[11px] text-slate-600">
+        © 2026 TempDiary. Built for UK Food Businesses. Follows FSA SFBB principles.
+      </p>
+    </div>
+  </footer>
+
   <!-- Interactive Demo Walkthrough Modal -->
   <div id="demoModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
     <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-lg p-6 sm:p-8 shadow-2xl relative flex flex-col max-h-[90vh]">
-      
-      <!-- Close Button -->
       <button onclick="closeDemoModal()" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-white rounded-xl hover:bg-slate-800 transition">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
 
-      <!-- Modal Header -->
       <div class="mb-6">
         <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400">Interactive Walkthrough</span>
         <h3 class="text-xl font-black text-white mt-1">A Kitchen Shift in 30 Seconds</h3>
       </div>
 
-      <!-- Step Indicators -->
       <div class="grid grid-cols-3 gap-2 mb-6">
         <button onclick="setDemoStep(1)" id="stepTab1" class="py-2 text-xs font-bold rounded-xl border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 transition">
           1. Open Kitchen
@@ -353,10 +375,7 @@
         </button>
       </div>
 
-      <!-- Step Slides -->
       <div class="flex-1 overflow-y-auto space-y-4">
-        
-        <!-- Slide 1 -->
         <div id="slide1" class="space-y-4">
           <div class="p-4 bg-slate-950 border border-slate-800 rounded-2xl">
             <div class="flex items-center gap-3">
@@ -381,7 +400,6 @@
           </ul>
         </div>
 
-        <!-- Slide 2 -->
         <div id="slide2" class="hidden space-y-4">
           <div class="p-4 bg-slate-950 border border-slate-800 rounded-2xl">
             <div class="flex items-center gap-3">
@@ -406,7 +424,6 @@
           </ul>
         </div>
 
-        <!-- Slide 3 -->
         <div id="slide3" class="hidden space-y-4">
           <div class="p-4 bg-slate-950 border border-slate-800 rounded-2xl">
             <div class="flex items-center gap-3">
@@ -430,10 +447,8 @@
             </li>
           </ul>
         </div>
-
       </div>
 
-      <!-- Footer Action -->
       <div class="mt-8 pt-4 border-t border-slate-800 flex items-center justify-between">
         <a href="https://app.tempdiary.co.uk" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl text-xs flex items-center justify-center gap-2 transition active:scale-95 shadow-lg shadow-emerald-500/20">
           <span>Test Drive on Your Phone (Free 14 Days)</span>
@@ -443,17 +458,116 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-900 py-8 px-6 text-center text-xs text-slate-600">
-    <div class="flex items-center justify-center gap-1 mb-2 font-semibold text-slate-400">
-      <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
-      <span>TempDiary UK</span>
-    </div>
-    <p>© 2026 TempDiary. Built for UK Food Businesses. Follows FSA SFBB principles.</p>
-  </footer>
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-2xl p-6 sm:p-8 shadow-2xl relative flex flex-col max-h-[85vh]">
+      <button onclick="closePrivacyModal()" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-white rounded-xl hover:bg-slate-800 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
 
-  <!-- Modal Scripts & Icon Initializer -->
+      <div class="mb-4">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400">Legal & GDPR</span>
+        <h3 class="text-xl font-black text-white mt-1">Privacy Policy</h3>
+        <p class="text-xs text-slate-500 mt-0.5">Last updated: September 2026</p>
+      </div>
+
+      <div class="flex-1 overflow-y-auto space-y-4 text-xs sm:text-sm text-slate-300 pr-2 leading-relaxed">
+        <section class="space-y-1.5">
+          <h4 class="font-bold text-white text-sm">1. Introduction</h4>
+          <p class="text-slate-400">
+            TempDiary (&ldquo;we&rdquo;, &ldquo;our&rdquo;) provides digital food safety compliance services for UK food businesses. This policy outlines how we handle your data under the UK General Data Protection Regulation (UK GDPR) and Data Protection Act 2018.
+          </p>
+        </section>
+
+        <section class="space-y-1.5">
+          <h4 class="font-bold text-white text-sm">2. Information We Collect</h4>
+          <ul class="list-disc pl-5 space-y-1 text-slate-400">
+            <li><strong>Account Information:</strong> Account holder email address and trading business name.</li>
+            <li><strong>Compliance Logs:</strong> Temperature records, equipment labels, opening/closing timestamps, and staff sign-off names or initials.</li>
+            <li><strong>Billing Details:</strong> Payment processing is handled exclusively by Stripe. We do not store credit card numbers on our servers.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-1.5">
+          <h4 class="font-bold text-white text-sm">3. Purpose of Processing</h4>
+          <p class="text-slate-400">
+            We process your information strictly to maintain compliance records under Food Standards Agency (FSA) regulations, generate Environmental Health Officer (EHO) inspection packs, manage subscriptions, and provide customer support.
+          </p>
+        </section>
+
+        <section class="space-y-1.5">
+          <h4 class="font-bold text-white text-sm">4. Data Retention</h4>
+          <p class="text-slate-400">
+            FSA guidelines typically mandate retaining food hygiene records for audit purposes. Temperature logs and sign-off records are retained securely during your active account tenure and can be exported as PDF dossiers at any time.
+          </p>
+        </section>
+
+        <section class="space-y-1.5">
+          <h4 class="font-bold text-white text-sm">5. Third-Party Processors</h4>
+          <p class="text-slate-400">
+            We use trusted enterprise infrastructure to power TempDiary:
+          </p>
+          <ul class="list-disc pl-5 space-y-1 text-slate-400">
+            <li><strong>Supabase:</strong> Encrypted database and user authentication.</li>
+            <li><strong>Cloudflare:</strong> Secure edge hosting, DDoS protection, and DNS.</li>
+            <li><strong>Stripe:</strong> Payment facilitation and subscription management.</li>
+            <li><strong>Google Analytics:</strong> Anonymous web traffic and conversion metrics.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-1.5">
+          <h4 class="font-bold text-white text-sm">6. Your Rights</h4>
+          <p class="text-slate-400">
+            Under UK GDPR, you have the right to access, rectify, or erase your personal data. For requests or inquiries, email <a href="mailto:support@tempdiary.co.uk" class="text-emerald-400 underline">support@tempdiary.co.uk</a>.
+          </p>
+        </section>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+        <button onclick="closePrivacyModal()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl text-xs transition">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <aside 
+    id="cookieBanner" 
+    aria-label="Cookie Preferences" 
+    class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-40 hidden p-4 sm:p-5 rounded-2xl bg-slate-900/95 border border-slate-800 shadow-2xl backdrop-blur-md text-xs text-slate-300 animate-in slide-in-from-bottom-5 duration-300"
+  >
+    <div class="flex items-start gap-3">
+      <div class="p-2 bg-emerald-500/10 text-emerald-400 rounded-xl shrink-0 mt-0.5">
+        <i data-lucide="cookie" class="w-4 h-4"></i>
+      </div>
+      <div class="space-y-2">
+        <p class="leading-relaxed">
+          We use strictly essential cookies and local storage to manage your kitchen login sessions and remember staff names. We also use privacy-focused analytics to improve TempDiary.
+        </p>
+        <div class="flex items-center gap-3 pt-1">
+          <button 
+            type="button" 
+            onclick="acceptCookies()" 
+            class="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl text-xs transition active:scale-95 shadow-md shadow-emerald-500/10"
+          >
+            Got it
+          </button>
+          <button 
+            type="button" 
+            onclick="openPrivacyModal()" 
+            class="text-slate-400 hover:text-white underline text-[11px] transition"
+          >
+            Read Privacy Policy
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
   <script>
+    // Demo Walkthrough Modal
     function openDemoModal() {
       const modal = document.getElementById('demoModal');
       modal.classList.remove('hidden');
@@ -482,18 +596,54 @@
       lucide.createIcons();
     }
 
-    // Close modal when clicking on the backdrop
+    // Privacy Policy Modal
+    function openPrivacyModal() {
+      const modal = document.getElementById('privacyModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePrivacyModal() {
+      const modal = document.getElementById('privacyModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Cookie Banner Handling
+    function checkCookieConsent() {
+      const accepted = localStorage.getItem('tempdiary_cookie_consent');
+      if (!accepted) {
+        document.getElementById('cookieBanner').classList.remove('hidden');
+      }
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('tempdiary_cookie_consent', 'accepted');
+      document.getElementById('cookieBanner').classList.add('hidden');
+    }
+
+    // Close Modals on Backdrop Click
     document.getElementById('demoModal')?.addEventListener('click', function(e) {
       if (e.target === this) closeDemoModal();
     });
 
-    // Close modal on Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeDemoModal();
+    document.getElementById('privacyModal')?.addEventListener('click', function(e) {
+      if (e.target === this) closePrivacyModal();
     });
 
-    // Initialize Lucide Icons
-    lucide.createIcons();
+    // Close Modals on Escape Key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeDemoModal();
+        closePrivacyModal();
+      }
+    });
+
+    // Init
+    window.addEventListener('DOMContentLoaded', () => {
+      checkCookieConsent();
+      lucide.createIcons();
+    });
   </script>
 </body>
 </html>
