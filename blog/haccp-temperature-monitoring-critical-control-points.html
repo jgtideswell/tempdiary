@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJJ0JL61J0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FJJ0JL61J0');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HACCP Temperature Monitoring: Critical Control Points Guide (2026) | TempDiary</title>
+  <meta name="description" content="Master HACCP temperature monitoring and Critical Control Points (CCPs) in UK commercial kitchens. Learn critical limits, daily verification, and audit routines." />
+  <link rel="canonical" href="https://tempdiary.co.uk/blog/haccp-temperature-monitoring-critical-control-points.html" />
+
+  <!-- Schema.org SEO Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "HACCP Temperature Monitoring: Critical Control Points Guide (2026)",
+        "description": "Practical guide to identifying, monitoring, and documenting HACCP Critical Control Points (CCPs) for temperature management in UK food businesses.",
+        "datePublished": "2026-09-25",
+        "dateModified": "2026-09-25",
+        "author": {
+          "@type": "Organization",
+          "name": "TempDiary",
+          "url": "https://tempdiary.co.uk"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a Critical Control Point (CCP) for temperature in food safety?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Critical Control Point (CCP) is a specific operational stage where thermal control must be applied to prevent, eliminate, or reduce a biological food safety hazard to an acceptable, safe level."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the core temperature CCPs in a commercial kitchen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The primary temperature CCPs include: Delivery receipt (cold food 8°C or below), Chilled storage (0°C to 5°C), Cooking/Reheating (core 75°C for 30 seconds or equivalent), Cooling (under 8°C within 90 minutes), and Hot holding (63°C or above)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if a Critical Limit is breached during food prep?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When a critical limit is breached, predetermined corrective actions must be initiated immediately and documented in your food safety diary. Actions range from continued cooking and rapid chilling to quarantine and product disposal."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 min-h-screen flex flex-col justify-between">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-semibold py-2 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-inner">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-300 animate-ping"></span>
+    Built for UK Food Businesses • 100% FSA "Safer Food, Better Business" Compliant
+  </aside>
+
+  <!-- Navigation -->
+  <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-30">
+    <nav class="max-w-4xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5">
+        <div class="p-2 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-emerald-400 flex items-center justify-center">
+          <i data-lucide="thermometer-snowflake" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xl font-black tracking-tight text-white">TempDiary<span class="text-emerald-400">.</span></span>
+      </a>
+      
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="https://tempdiary.co.uk/blog/index.html" class="text-xs font-bold text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>All Guides</span>
+        </a>
+        <a href="/guide.html" class="hidden sm:inline-flex text-xs font-bold text-slate-300 hover:text-emerald-400 transition items-center gap-1.5">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>User Guide</span>
+        </a>
+        <a href="https://app.tempdiary.co.uk" class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl text-xs transition active:scale-95 shadow-lg shadow-emerald-500/20">
+          <span>Try Free</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Article Container -->
+  <main class="max-w-3xl mx-auto px-6 py-12 flex-grow w-full">
+    <article>
+      <!-- Header -->
+      <div class="mb-8 border-b border-slate-900 pb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">
+          HACCP Compliance & Safety Management
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+          HACCP Temperature Monitoring: Critical Control Points Guide (2026)
+        </h1>
+        <div class="flex items-center gap-3 text-slate-500 text-xs sm:text-sm mt-4">
+          <span>Updated September 2026</span>
+          <span>•</span>
+          <span>6 min read</span>
+          <span>•</span>
+          <span class="text-emerald-400 font-medium">FSA SFBB Protocols</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
+        <p>
+          Under UK food safety regulations, every food business operator is legally required to implement and maintain a permanent food safety management system based on the principles of <strong>Hazard Analysis and Critical Control Points (HACCP)</strong>.
+        </p>
+        <p>
+          While HACCP covers many aspects of kitchen hygiene, <strong>temperature monitoring</strong> forms the backbone of controlling biological food hazards. Managing microbiological growth requires understanding exactly where your Critical Control Points (CCPs) sit, establishing unambiguous critical limits, and maintaining continuous due-diligence records.
+        </p>
+
+        <!-- CCP Master Matrix -->
+        <div class="overflow-x-auto my-8 border border-slate-800 rounded-2xl bg-slate-900/60 p-4 shadow-xl">
+          <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+            <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i>
+            Kitchen HACCP Temperature Critical Control Points
+          </h2>
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 font-semibold">
+                <th class="py-2.5">Process Step</th>
+                <th class="py-2.5">Biological Hazard</th>
+                <th class="py-2.5 text-emerald-400">Critical Limit (UK)</th>
+                <th class="py-2.5">Mandatory Corrective Action</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 font-mono text-slate-300">
+              <tr>
+                <td class="py-2.5 font-sans font-medium text-white">1. Delivery Receipt</td>
+                <td class="py-2.5 font-sans text-slate-400">Bacterial growth in transit</td>
+                <td class="py-2.5 text-emerald-400 font-bold">Chilled &le; 8.0°C / Frozen &le; -15°C</td>
+                <td class="py-2.5 font-sans text-slate-400">Reject delivery from supplier</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 font-sans font-medium text-white">2. Chilled Storage</td>
+                <td class="py-2.5 font-sans text-slate-400"><em>Listeria</em> & pathogen multiplication</td>
+                <td class="py-2.5 text-emerald-400 font-bold">&le; 8.0°C (Best: 0°C to 5°C)</td>
+                <td class="py-2.5 font-sans text-slate-400">Adjust dial, transfer food, engineer call</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 font-sans font-medium text-white">3. Cooking / Reheat</td>
+                <td class="py-2.5 font-sans text-slate-400">Pathogen survival (<em>Salmonella</em>, <em>E. coli</em>)</td>
+                <td class="py-2.5 text-emerald-400 font-bold">&ge; 75.0°C core (30s)</td>
+                <td class="py-2.5 font-sans text-slate-400">Continue cooking until core threshold met</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 font-sans font-medium text-white">4. Rapid Chilling</td>
+                <td class="py-2.5 font-sans text-slate-400">Spore germination (<em>C. perfringens</em>)</td>
+                <td class="py-2.5 text-emerald-400 font-bold">&le; 8.0°C within 90 minutes</td>
+                <td class="py-2.5 font-sans text-slate-400">Divide into shallow trays, ice bath, or bin</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 font-sans font-medium text-white">5. Hot Holding</td>
+                <td class="py-2.5 font-sans text-slate-400">Toxin formation in warm food</td>
+                <td class="py-2.5 text-emerald-400 font-bold">&ge; 63.0°C continuous</td>
+                <td class="py-2.5 font-sans text-slate-400">Reheat to 75°C (if &lt;2h) or discard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="text-xl font-bold text-white pt-4">1. What Makes a Step a "Critical Control Point"?</h2>
+        <p>
+          Not every single temperature measurement in a kitchen is a CCP. A process step is classified as a Critical Control Point only if:
+        </p>
+        <ul class="space-y-2 text-slate-300 text-xs sm:text-sm pl-1">
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span>A food safety hazard (microbiological contamination or proliferation) is present.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span>A specific preventive measure (such as heating to 75°C or chilling below 8°C) can eliminate or control that hazard.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span><strong>No subsequent step in the preparation process will rectify the hazard if missed.</strong></span>
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-bold text-white pt-4">2. Establishing Clear Critical Limits</h2>
+        <p>
+          A <strong>Critical Limit</strong> is the strict boundary separating acceptable, safe food from potentially hazardous product.
+        </p>
+        <p>
+          For example, in cold holding, <strong>8.0°C</strong> is your legal statutory limit. If a prep counter reads 8.1°C, the critical limit has formally been breached. While a kitchen might internally target 3°C as an operational target, any reading between 8°C and 63°C sits inside the hazardous "Danger Zone" where bacteria multiply rapidly.
+        </p>
+
+        <!-- CTA Box Matching Dark Landing Style -->
+        <div class="my-8 p-6 rounded-3xl bg-slate-900 border border-emerald-500/30 shadow-xl shadow-emerald-950/20">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            HACCP Record Automation
+          </div>
+          <h3 class="text-lg font-bold text-white">Record HACCP temperature checks without paper binders</h3>
+          <p class="text-slate-400 text-xs sm:text-sm mt-1.5 leading-relaxed">
+            TempDiary enforces UK HACCP rules automatically. Out-of-range temperatures trigger instantaneous corrective action prompts, creating tamper-evident records that satisfy visiting EHO auditors.
+          </p>
+          <div class="mt-4 flex flex-col sm:flex-row items-center gap-3">
+            <a href="https://app.tempdiary.co.uk" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-xl text-xs transition active:scale-95 shadow-lg shadow-emerald-500/20">
+              <span>Start 14-Day Free Test Drive</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <span class="text-xs text-slate-500">Full 30-day EHO audit dossier export</span>
+          </div>
+        </div>
+
+        <h2 class="text-xl font-bold text-white pt-4">3. The 4 Principles of Daily CCP Monitoring</h2>
+        <p>
+          An Environmental Health Officer inspecting your premises will look for verification that CCPs are monitored actively rather than purely documented on paper after the shift:
+        </p>
+        <ol class="list-decimal pl-5 space-y-2.5 text-slate-300 text-xs sm:text-sm">
+          <li><strong>Continuous vs Scheduled Frequency:</strong> Daily opening checks and evening closing checks establish the routine baseline for refrigeration and freezers. Cooking batches and hot-holding buffet line checks must occur during active service.</li>
+          <li><strong>Calibrated Instrumentation:</strong> Handheld digital probes should undergo monthly calibration checks (using an iced-water slush bath at 0°C and boiling water at 100°C) with results recorded in your calibration log.</li>
+          <li><strong>Individual Staff Attribution:</strong> Every reading must trace to a specific team member rather than anonymous ticks or single-pen handwriting across multiple weeks.</li>
+          <li><strong>Documented Non-Conformance:</strong> If a freezer drops to -12°C or a bain-marie falls to 58°C, your HACCP plan is only verified if the log records the immediate corrective resolution.</li>
+        </ol>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div class="mt-12 pt-8 border-t border-slate-900 flex items-center justify-between">
+        <a href="https://tempdiary.co.uk/blog/index.html" class="text-xs font-bold text-slate-400 hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Back to All Guides</span>
+        </a>
+        <a href="/blog/commercial-fridge-temperature-log-sheet-template.html" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1.5">
+          <span>Read Log Sheet Guide</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-10 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-400 font-semibold">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+        <span>TempDiary UK</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a href="/" class="hover:text-emerald-400 transition underline">Home</a>
+        <a href="/guide.html" class="hover:text-emerald-400 transition underline">User Guide</a>
+        <a href="https://tempdiary.co.uk/blog/index.html" class="text-emerald-400 hover:text-emerald-300 transition underline font-medium">Blog</a>
+      </div>
+      <p class="text-[11px] text-slate-600">
+        © 2026 TempDiary. Built for UK Food Businesses. Follows FSA SFBB principles.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
