@@ -1,72 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Safety & Compliance Blog | TempDiary</title>
-  <meta name="description" content="Practical guides, legal standards, and HACCP compliance advice for UK food businesses, commercial kitchens, and catering managers.">
-  <link rel="canonical" href="https://yourdomain.com/blog/">
-  <!-- Tailwind CSS via CDN (matches your landing styling) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJJ0JL61J0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FJJ0JL61J0');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Safety & SFBB Compliance Blog | TempDiary</title>
+  <meta name="description" content="Guides, legal commercial fridge temperature limits, and EHO audit tips for UK food businesses and commercial kitchens." />
+  <link rel="canonical" href="https://tempdiary.co.uk/blog/" />
 
-  <!-- Navigation -->
-  <header class="border-b border-slate-200 bg-white sticky top-0 z-20">
-    <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="/" class="font-bold text-xl tracking-tight text-emerald-600 flex items-center gap-2">
-        <span>TempDiary</span>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-30">
+    <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5">
+        <div class="p-2.5 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-emerald-400">
+          <i data-lucide="thermometer-snowflake" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xl font-black tracking-tight text-white">TempDiary<span class="text-emerald-400">.</span></span>
       </a>
-      <nav class="flex items-center gap-6 text-sm font-medium">
-        <a href="/" class="text-slate-600 hover:text-slate-900">Home</a>
-        <a href="/guide.html" class="text-slate-600 hover:text-slate-900">Guide</a>
-        <a href="/blog/" class="text-emerald-600 font-semibold">Blog</a>
-        <a href="/#app" class="px-3.5 py-1.5 rounded-lg bg-emerald-600 text-white hover:bg-emerald-500 transition">Open App</a>
-      </nav>
-    </div>
+      
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="/guide.html" class="text-xs font-bold text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>User Guide</span>
+        </a>
+        <a href="https://app.tempdiary.co.uk" class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl text-xs transition active:scale-95 shadow-lg shadow-emerald-500/20">
+          <span>Try Free</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <main class="flex-grow max-w-5xl mx-auto px-4 py-12 w-full">
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 py-12 sm:py-16 flex-grow w-full">
     <div class="max-w-2xl mb-12">
-      <span class="text-xs uppercase font-bold tracking-widest text-emerald-600">Guides & Compliance</span>
-      <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Food Safety & Compliance Hub</h1>
-      <p class="text-slate-600 mt-3 text-base md:text-lg">Clear guides, legal compliance benchmarks, and practical checklists to help your kitchen pass inspections with flying colours.</p>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">
+        Guides & Compliance
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white">Food Safety & Compliance Blog</h1>
+      <p class="text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
+        Legal compliance rules, EHO audit walkthroughs, and practical guides to keep your kitchen operating safely at 5 stars.
+      </p>
     </div>
 
-    <!-- Posts Grid -->
-    <div class="grid md:grid-cols-2 gap-8">
+    <!-- Post Grid -->
+    <div class="grid md:grid-cols-2 gap-6">
       
-      <!-- Article Card 1 -->
-      <article class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition flex flex-col justify-between">
+      <!-- Article 1 Card -->
+      <article class="p-6 rounded-3xl bg-slate-900 border border-slate-800 hover:border-emerald-500/40 transition duration-200 flex flex-col justify-between">
         <div>
-          <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
-            <span class="text-emerald-600">UK Compliance</span> • <span>5 min read</span>
+          <div class="flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-wider mb-3">
+            <span>UK Regulations</span> • <span class="text-slate-500">5 min read</span>
           </div>
-          <h2 class="text-xl font-bold text-slate-900 hover:text-emerald-600 transition">
+          <h2 class="text-xl font-bold text-white hover:text-emerald-300 transition">
             <a href="/blog/legal-commercial-fridge-temperatures-uk.html">Legal Commercial Fridge & Freezer Temperatures in the UK (2026 Guide)</a>
           </h2>
-          <p class="text-slate-600 text-sm mt-3 line-clamp-3 leading-relaxed">
-            The legal maximum temperature for chilled food in the UK is 8°C, but best practice is 1°C to 5°C. Learn what Food Standards Agency rules require and what EHOs inspect.
+          <p class="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed line-clamp-3">
+            What is the actual legal limit for chilled storage? Learn why 8°C is the statutory ceiling, why EHOs look for 1°C to 5°C, and how to record corrective logs correctly.
           </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <span class="text-xs text-slate-400">Updated Sept 2026</span>
-          <a href="/blog/legal-commercial-fridge-temperatures-uk.html" class="text-sm font-semibold text-emerald-600 hover:underline">Read Guide &rarr;</a>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <span class="text-[11px] text-slate-500">Updated Sept 2026</span>
+          <a href="/blog/legal-commercial-fridge-temperatures-uk.html" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">
+            <span>Read Guide</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
         </div>
       </article>
 
-      <!-- Post Placeholder (Ready for next entry) -->
-      <article class="bg-slate-100 border border-dashed border-slate-300 rounded-2xl p-6 flex flex-col justify-center items-center text-center text-slate-400">
-        <p class="text-sm font-medium">Next Guide Coming Soon:</p>
-        <p class="text-slate-700 font-semibold mt-1">EHO Inspection Checklist: Temperature Log Best Practices</p>
+      <!-- Placeholder / Coming Soon Card -->
+      <article class="p-6 rounded-3xl bg-slate-900/40 border border-dashed border-slate-800 flex flex-col justify-center items-center text-center">
+        <div class="w-10 h-10 rounded-xl bg-slate-800/60 text-slate-500 flex items-center justify-center mb-3">
+          <i data-lucide="clock" class="w-5 h-5"></i>
+        </div>
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Coming Next</span>
+        <h3 class="text-base font-bold text-slate-300 mt-1">EHO Inspection Checklist: What Officers Check in Your Fridge Log</h3>
       </article>
 
     </div>
   </main>
 
-  <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-500">
-    <p>&copy; 2026 TempDiary. Built for commercial kitchens and food hygiene compliance.</p>
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-10 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-400 font-semibold">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+        <span>TempDiary UK</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a href="/" class="hover:text-emerald-400 transition underline">Home</a>
+        <a href="/guide.html" class="hover:text-emerald-400 transition underline">User Guide</a>
+        <a href="/blog/" class="text-emerald-400 font-semibold underline">Blog</a>
+      </div>
+      <p class="text-[11px] text-slate-600">
+        © 2026 TempDiary. Built for UK Food Businesses. Follows FSA SFBB principles.
+      </p>
+    </div>
   </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
