@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Legal Commercial Fridge & Freezer Temperatures UK (2026 Guide)</title>
-  <meta name="description" content="What is the legal fridge temperature for UK food businesses? Learn Food Standards Agency (FSA) legal limits, safe storage zones, and inspection requirements.">
-  <link rel="canonical" href="https://yourdomain.com/blog/legal-commercial-fridge-temperatures-uk.html">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJJ0JL61J0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FJJ0JL61J0');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Commercial Fridge & Freezer Temperatures UK (2026 Guide) | TempDiary</title>
+  <meta name="description" content="What is the legal fridge temperature for UK food businesses? Learn Food Standards Agency (FSA) legal limits, safe storage zones, and inspection requirements." />
+  <link rel="canonical" href="https://tempdiary.co.uk/blog/legal-commercial-fridge-temperatures-uk.html" />
 
-  <!-- Schema.org JSON-LD for Google Rich Results -->
+  <!-- Schema.org SEO Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
-        "headline": "Legal Commercial Fridge & Freezer Temperatures in the UK",
-        "description": "Comprehensive guide to legal requirements and industry best practice for commercial refrigeration in UK food venues.",
+        "headline": "Legal Commercial Fridge & Freezer Temperatures in the UK (2026 Guide)",
+        "description": "Comprehensive guide to UK legal requirements and industry best practice for commercial refrigeration and freezer temperatures.",
         "datePublished": "2026-09-25",
         "dateModified": "2026-09-25",
         "author": {
           "@type": "Organization",
-          "name": "TempDiary"
+          "name": "TempDiary",
+          "url": "https://tempdiary.co.uk"
         }
       },
       {
@@ -32,15 +40,23 @@
             "name": "What is the legal commercial fridge temperature in the UK?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "By law under The Food Safety and Hygiene (England) Regulations, cold food must be kept at 8°C or below. However, industry best practice recommended by the Food Standards Agency is to operate fridges between 1°C and 5°C."
+              "text": "Under The Food Safety and Hygiene (England) Regulations 2013, cold food must legally be kept at 8°C or below. However, industry best practice recommended by the Food Standards Agency (FSA) and local Environmental Health Officers (EHOs) is 0°C to 5°C."
             }
           },
           {
             "@type": "Question",
-            "name": "What temperature must commercial freezers operate at?",
+            "name": "What temperature must commercial freezers operate at in the UK?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Commercial freezers should operate at -18°C or colder to prevent bacterial growth and maintain food quality."
+              "text": "Commercial freezers should operate at -18°C or colder to maintain food quality and inhibit bacterial multiplication."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the legal hot-holding temperature in the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By law, hot-held food must be kept at 63°C or hotter to prevent the multiplication of harmful bacteria."
             }
           }
         ]
@@ -48,105 +64,229 @@
     ]
   }
   </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 min-h-screen flex flex-col justify-between">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-semibold py-2 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-inner">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-300 animate-ping"></span>
+    Built for UK Food Businesses • 100% FSA "Safer Food, Better Business" Compliant
+  </aside>
 
   <!-- Navigation -->
-  <header class="border-b border-slate-200 bg-white sticky top-0 z-20">
-    <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="/" class="font-bold text-xl tracking-tight text-emerald-600">TempDiary</a>
-      <nav class="flex items-center gap-6 text-sm font-medium">
-        <a href="/blog/" class="text-slate-600 hover:text-slate-900">&larr; All Guides</a>
-        <a href="/#app" class="px-3.5 py-1.5 rounded-lg bg-emerald-600 text-white hover:bg-emerald-500 transition">Open App</a>
-      </nav>
-    </div>
+  <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur sticky top-0 z-30">
+    <nav class="max-w-4xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5">
+        <div class="p-2 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-emerald-400 flex items-center justify-center">
+          <i data-lucide="thermometer-snowflake" class="w-5 h-5"></i>
+        </div>
+        <span class="text-xl font-black tracking-tight text-white">TempDiary<span class="text-emerald-400">.</span></span>
+      </a>
+      
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="https://tempdiary.co.uk/blog/index.html" class="text-xs font-bold text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>All Guides</span>
+        </a>
+        <a href="/guide.html" class="hidden sm:inline-flex text-xs font-bold text-slate-300 hover:text-emerald-400 transition items-center gap-1.5">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>User Guide</span>
+        </a>
+        <a href="https://app.tempdiary.co.uk" class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl text-xs transition active:scale-95 shadow-lg shadow-emerald-500/20">
+          <span>Try Free</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Article Body -->
-  <main class="flex-grow max-w-3xl mx-auto px-4 py-12 w-full">
-    <article class="prose prose-slate lg:prose-lg max-w-none">
-      
-      <div class="mb-8">
-        <div class="text-xs uppercase font-bold tracking-widest text-emerald-600 mb-2">UK Food Hygiene Compliance</div>
-        <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+  <!-- Article Container -->
+  <main class="max-w-3xl mx-auto px-6 py-12 flex-grow w-full">
+    <article>
+      <!-- Header -->
+      <div class="mb-8 border-b border-slate-900 pb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">
+          UK Food Hygiene Compliance
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
           Legal Commercial Fridge & Freezer Temperatures in the UK (2026 Guide)
         </h1>
-        <p class="text-slate-500 text-sm mt-3">Published September 2026 • 5 min read</p>
+        <div class="flex items-center gap-3 text-slate-500 text-xs sm:text-sm mt-4">
+          <span>Updated September 2026</span>
+          <span>•</span>
+          <span>5 min read</span>
+          <span>•</span>
+          <span class="text-emerald-400 font-medium">SFBB Standards</span>
+        </div>
       </div>
 
-      <div class="text-slate-700 leading-relaxed space-y-6">
+      <!-- Content -->
+      <div class="space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
         <p>
-          Whether running a bustling restaurant kitchen, café, dark kitchen, or catering operation, maintaining proper commercial refrigeration temperatures is one of the first areas an Environmental Health Officer (EHO) examines during a food hygiene inspection.
+          Whether operating an independent café, artisan bakery, dark kitchen, or busy restaurant line, commercial refrigeration temperatures are consistently one of the first physical benchmarks inspected by an Environmental Health Officer (EHO).
+        </p>
+        <p>
+          Failing to prove consistent cold-chain controls is one of the quickest routes from a 5-star Food Hygiene Rating down to an enforcement notice. Here is what UK food law dictates, why industry best practice differs from the statutory limit, and how to stay audit-ready every shift.
         </p>
 
-        <!-- Quick Reference Table -->
-        <div class="overflow-x-auto my-8 border border-slate-200 rounded-xl bg-white p-4">
-          <h2 class="text-lg font-bold text-slate-900 mb-3">Quick Reference Temperature Chart</h2>
-          <table class="w-full text-left text-sm text-slate-700 border-collapse">
+        <!-- Temperature Matrix Table -->
+        <div class="overflow-x-auto my-6 border border-slate-800 rounded-2xl bg-slate-900/60 p-4 shadow-xl">
+          <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+            <i data-lucide="thermometer" class="w-4 h-4 text-emerald-400"></i>
+            Quick Reference UK Food Temperature Chart
+          </h2>
+          <table class="w-full text-left text-xs border-collapse">
             <thead>
-              <tr class="border-b border-slate-200 font-semibold text-slate-900">
-                <th class="py-2.5">Unit Type</th>
-                <th class="py-2.5">Legal Limit (UK)</th>
+              <tr class="border-b border-slate-800 text-slate-400 font-semibold">
+                <th class="py-2.5">Storage Category</th>
+                <th class="py-2.5">UK Statutory Limit</th>
                 <th class="py-2.5">Recommended Setting</th>
+                <th class="py-2.5">Audit Requirement</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-100">
+            <tbody class="divide-y divide-slate-800/60 font-mono">
               <tr>
-                <td class="py-2.5 font-medium">Chilled Storage / Fridges</td>
-                <td class="py-2.5 text-amber-700 font-semibold">8°C or below</td>
-                <td class="py-2.5 text-emerald-700 font-semibold">1°C to 5°C</td>
+                <td class="py-2.5 font-sans font-medium text-white">Chilled Storage / Fridges</td>
+                <td class="py-2.5 text-rose-400 font-bold">8.0°C Max</td>
+                <td class="py-2.5 text-emerald-400 font-bold">0°C to 5.0°C</td>
+                <td class="py-2.5 font-sans text-slate-400">Daily logged check</td>
               </tr>
               <tr>
-                <td class="py-2.5 font-medium">Freezers</td>
-                <td class="py-2.5">-</td>
-                <td class="py-2.5 text-emerald-700 font-semibold">-18°C or colder</td>
+                <td class="py-2.5 font-sans font-medium text-white">Commercial Freezers</td>
+                <td class="py-2.5 text-slate-400">Frozen solid</td>
+                <td class="py-2.5 text-cyan-400 font-bold">-18°C or lower</td>
+                <td class="py-2.5 font-sans text-slate-400">Daily logged check</td>
               </tr>
               <tr>
-                <td class="py-2.5 font-medium">Hot Holding Units</td>
-                <td class="py-2.5 text-amber-700 font-semibold">63°C or above</td>
-                <td class="py-2.5 text-emerald-700 font-semibold">65°C to 70°C</td>
+                <td class="py-2.5 font-sans font-medium text-white">Hot Holding (Bain-marie)</td>
+                <td class="py-2.5 text-rose-400 font-bold">63.0°C Min</td>
+                <td class="py-2.5 text-emerald-400 font-bold">65°C to 70.0°C</td>
+                <td class="py-2.5 font-sans text-slate-400">Service checks</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-3">1. The Legal Maximum: 8°C</h2>
+        <h2 class="text-xl font-bold text-white pt-4">1. The Legal Maximum: 8°C</h2>
         <p>
-          Under <strong>The Food Safety and Hygiene (England) Regulations 2013</strong> (and equivalent devolved regulations in Scotland, Wales, and Northern Ireland), high-risk food that relies on refrigeration must legally be held at or below <strong>8°C</strong>.
+          Under <strong class="text-white">The Food Safety and Hygiene (England) Regulations 2013</strong> (and equivalent devolved regulations in Scotland, Wales, and Northern Ireland), any food that requires chilling to prevent the growth of pathogenic microorganisms or toxins must legally be held at or below <strong class="text-emerald-400 font-bold">8°C</strong>.
         </p>
         <p>
-          High-risk items include dairy products, cooked meats, seafood, prepared salads, and anything marked "keep refrigerated".
-        </p>
-
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-3">2. Why Operating Between 1°C and 5°C is Essential</h2>
-        <p>
-          While 8°C is the legal threshold, setting your refrigeration thermostats to 7°C or 8°C leaves no safety margin. During lunch rush or delivery hours, frequent door openings can easily spike unit temperatures into the "Danger Zone" (8°C to 63°C), where bacteria such as <em>Listeria monocytogenes</em> and <em>Salmonella</em> multiply rapidly.
+          This statutory limit applies to all high-risk items, including dairy products, cooked meats, poultry, soft cheeses, prepared salads, and anything labeled "keep refrigerated".
         </p>
 
-        <!-- Product Conversion Box -->
-        <div class="my-10 bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
-          <h3 class="text-lg font-bold text-emerald-950">Ditch the greasy paper clipboard logs</h3>
-          <p class="text-emerald-800 text-sm mt-2 leading-relaxed">
-            TempDiary lets your team log daily morning and evening fridge checks in seconds from any tablet or phone, creating instant timestamped records for EHO audits.
+        <h2 class="text-xl font-bold text-white pt-4">2. Why Best Practice is 0°C to 5°C</h2>
+        <p>
+          While 8°C represents the legal threshold, setting refrigeration thermostats to 7°C leaves zero margin for operational error. During morning prep or peak lunch rushes, frequent door openings and hot kitchen ambient temperatures quickly drive internal temps into the <strong class="text-rose-400 font-semibold">Danger Zone (8°C to 63°C)</strong>.
+        </p>
+        <p>
+          In the Danger Zone, food poisoning bacteria like <em>Listeria monocytogenes</em> and <em>Salmonella</em> multiply rapidly. Operating between 0°C and 5°C guarantees a crucial buffer that keeps core food safe even when service gets hectic.
+        </p>
+
+        <!-- CTA Box Matching Dark Landing Style -->
+        <div class="my-8 p-6 rounded-3xl bg-slate-900 border border-emerald-500/30 shadow-xl shadow-emerald-950/20">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">
+            <i data-lucide="smartphone" class="w-4 h-4"></i>
+            Ditch The Greasy Blue Binder
+          </div>
+          <h3 class="text-lg font-bold text-white">Log kitchen fridge checks in 2 taps</h3>
+          <p class="text-slate-400 text-xs sm:text-sm mt-1.5 leading-relaxed">
+            TempDiary automates morning opening and evening closing logs on your smartphone, enforces instant corrective action notes for out-of-spec readings, and generates 1-click inspection PDFs for visiting EHOs.
           </p>
-          <a href="/#app" class="inline-block mt-4 px-4 py-2 rounded-lg bg-emerald-600 text-white font-medium text-sm hover:bg-emerald-700 transition">
-            Start Free Food Diary &rarr;
-          </a>
+          <div class="mt-4 flex flex-col sm:flex-row items-center gap-3">
+            <a href="https://app.tempdiary.co.uk" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-xl text-xs transition active:scale-95 shadow-lg shadow-emerald-500/20">
+              <span>Start 14-Day Free Trial</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <span class="text-xs text-slate-500">No credit card required upfront</span>
+          </div>
         </div>
 
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-3">3. What Do EHO Inspectors Expect to See?</h2>
-        <p>When an EHO arrives unannounced, they will:</p>
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Probe cold foods directly to check core temperatures.</li>
-          <li>Review consistent records proving checks occur at least twice daily (opening and closing).</li>
-          <li>Check that corrective actions are noted whenever a temperature deviates above 8°C.</li>
+        <h2 class="text-xl font-bold text-white pt-4">3. Freezer Requirements: Below -18°C</h2>
+        <p>
+          Unlike chilled storage, UK food regulations do not stipulate a single universal statutory temperature figure for general catering freezers; they specify that frozen food must be stored frozen solid.
+        </p>
+        <p>
+          However, industry standard and Food Standards Agency (FSA) Safer Food, Better Business (SFBB) benchmark guidelines specify operating freezers at <strong class="text-cyan-400 font-bold">-18°C or colder</strong>. At this temperature, bacterial activity halts completely, ensuring product integrity over extended storage periods.
+        </p>
+
+        <h2 class="text-xl font-bold text-white pt-4">4. What EHO Inspectors Look For</h2>
+        <p>During an unannounced inspection, Environmental Health Officers evaluate more than just the thermometer display:</p>
+        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span><strong>Independent Probing:</strong> Officers frequently use calibrated temperature probes to measure the core of chilled products directly rather than relying on the unit's internal dial.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span><strong>Opening & Closing Verification:</strong> Checking that both opening checks and closing checks are logged separately by named staff members.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span><strong>Documented Corrective Actions:</strong> If a fridge creeps up to 9.2°C, did your log document what was done (e.g. thermostat adjusted, stock transferred, engineer booked)? An unaddressed out-of-spec reading risks immediate rating demotion.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span><strong>Historical Records:</strong> Compliance requires businesses to produce at least six months of past temperature records upon demand.</span>
+          </li>
         </ul>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div class="mt-12 pt-8 border-t border-slate-900 flex items-center justify-between">
+        <a href="https://tempdiary.co.uk/blog/index.html" class="text-xs font-bold text-slate-400 hover:text-emerald-400 transition flex items-center gap-1.5">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Back to All Guides</span>
+        </a>
+        <a href="https://app.tempdiary.co.uk" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1.5">
+          <span>Open TempDiary App</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
       </div>
     </article>
   </main>
 
-  <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-500">
-    <p>&copy; 2026 TempDiary. Built for commercial kitchens and food hygiene compliance.</p>
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-10 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-400 font-semibold">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+        <span>TempDiary UK</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a href="/" class="hover:text-emerald-400 transition underline">Home</a>
+        <a href="/guide.html" class="hover:text-emerald-400 transition underline">User Guide</a>
+        <a href="https://tempdiary.co.uk/blog/index.html" class="text-emerald-400 hover:text-emerald-300 transition underline font-medium">Blog</a>
+      </div>
+      <p class="text-[11px] text-slate-600">
+        © 2026 TempDiary. Built for UK Food Businesses. Follows FSA SFBB principles.
+      </p>
+    </div>
   </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
